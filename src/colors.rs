@@ -65,19 +65,19 @@ pub enum Color {
 /// Examples: 
 /// ```
 /// use cli_example_utils::colors::ColorString;
-/// let colorString = ColorString {
+/// let color_string = ColorString {
 ///     color: Color::Red,
-///     string: "Hello, world!"
+///     string: "Hello, world!".to_string()
 ///     colorized: "\x1b[31m{}\x1b[0m".to_string(),
 /// }
 /// ```
 /// Set the string color depending on the `color` attribute
 /// ```
-/// colorString.paint();
+/// color_string.paint();
 /// ```
 /// Reset the colorized string 
 /// ```
-/// colorString.reset();
+/// color_string.reset();
 /// ```
 
 
